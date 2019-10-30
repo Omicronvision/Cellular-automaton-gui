@@ -28,9 +28,12 @@ class App
         void newGeneration();
         char outputGrid[YGRID][XGRID];
         char copiedGrid[YGRID][XGRID];
+        int numberGrid[YGRID][XGRID];
+        bool start = false;
+        int direction = 1;
         std::ifstream file;
         sf::RenderWindow window;
-        Cell alive, dead;
+        Cell alive, dead, cell2, cell3;
 };
 
 #endif // APP_H
